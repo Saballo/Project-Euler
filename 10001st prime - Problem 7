@@ -1,0 +1,17 @@
+let primes = [];
+let j = 2
+
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1;
+}
+
+while(primes.length < 10001) {
+  if(isPrime(j)===true){
+  primes.push(j);
+  j++	
+  } else {j++}
+}
+
+console.log(primes[10000])
